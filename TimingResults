@@ -1,0 +1,17 @@
+RandomizedQuickSort RunTime Random Non Reversed = 2550134
+RandomizedQuickSort RunTime Random Reversed = 953734
+RandomizedQuickSort RunTime SORTED non reversed = 499368
+RandomizedQuickSort RunTime SORTED Reversed = 281857
+HybridSort RunTime random Non Reversed = 233302
+HybridSort RunTime random Reversed = 204090
+HybridSort RunTime SORTED Non Reversed = 343834
+HybridSort RunTime SORTED Reversed = 95532
+
+
+My hybrid sort uses my random quick sort and will check to see if the partitioned section is <= 10% sorted
+if it isnt then it will continue sorting with random quick sort and if it is then it calls insertion sort and
+continues on.
+
+My hybrid sort was faster than my random quick sort in every single case and was actually a good bit faster.
+
+(timing values are in nanoseconds if you want them in milliseconds divide time by 1000000)
